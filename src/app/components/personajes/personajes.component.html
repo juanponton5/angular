@@ -1,0 +1,17 @@
+<section>
+    <h1>personajes 
+    </h1>
+    <ul>
+        @for (item of personajes.results; track item.name) {
+            <li>
+                <img src="{{item.image}}" alt="">
+                <div>
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.species}}</p>
+                    <p>{{item.gender}}</p>
+                    <p>{{item.status}}</p>
+                </div>
+            </li>
+        }
+    </ul>
+</section>

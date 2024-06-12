@@ -1,0 +1,13 @@
+<section>
+    <h1>lista episodios </h1>
+    <ul>
+
+        @for (item of episodios.results; track item.name) {
+            <li>
+                <h2>{{item.name}}</h2>
+                <strong>{{item.air_date}}</strong>
+                <p>{{item.episode}}</p>
+            </li>
+        }
+    </ul>
+</section>

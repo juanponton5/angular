@@ -1,0 +1,14 @@
+<section>
+    <h1>lista de locaciones 
+    </h1>
+    <ul>
+
+        @for (item of location.results; track item.name) {
+            <li>
+                <h2>{{item.name}}</h2>
+                <strong>{{item.type}}</strong>
+                <p>{{item.dimension}}</p>
+            </li>
+        }
+    </ul>
+</section>
